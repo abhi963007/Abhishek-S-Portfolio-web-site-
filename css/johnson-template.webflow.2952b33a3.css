@@ -2534,6 +2534,12 @@ a {
   display: inline-block;
 }
 
+.designer-text {
+  display: block;
+  margin-left: 3.5ch;
+  margin-top: -30px;
+}
+
 .say-hello-h2 {
   font-family: Outfit, sans-serif;
   font-size: 7.5rem;
@@ -2619,6 +2625,11 @@ a {
   transition:
     opacity 0.8s ease-out,
     transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hero-image,
+.user-image {
+  object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
@@ -3903,6 +3914,11 @@ a {
     line-height: 7rem;
   }
 
+  .designer-text {
+    margin-left: 3.5ch;
+    margin-top: -15px;
+  }
+
   .say-hello-h2 {
     font-size: 4.6875rem;
     line-height: 5.07813rem;
@@ -4211,8 +4227,13 @@ a {
   }
 
   .display {
-    font-size: 16vw;
-    line-height: 20vw;
+    font-size: 15vw;
+    line-height: 18vw;
+  }
+
+  .designer-text {
+    margin-left: 2.8ch;
+    margin-top: -2vw;
   }
 
   .say-hello-h2 {
@@ -4437,6 +4458,15 @@ a {
   .h2 {
     font-size: 2.2rem;
     line-height: 2.8rem;
+  }
+
+  .display {
+    font-size: 14vw;
+  }
+
+  .designer-text {
+    margin-left: 2ch;
+    margin-top: -1vw;
   }
 
   .style-guide-title {
