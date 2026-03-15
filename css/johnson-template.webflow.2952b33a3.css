@@ -3909,7 +3909,11 @@ a {
   }
 
   .navbar {
-    padding: 20px;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .hero-section {
@@ -3949,7 +3953,7 @@ a {
   }
 
   .work-blocks-list {
-    grid-row-gap: 250px;
+    grid-row-gap: 60px;
   }
 
   .work-block-image-wrapper {
@@ -4493,7 +4497,7 @@ a {
   }
 
   .work-blocks-list {
-    grid-row-gap: 200px;
+    grid-row-gap: 40px;
     width: 100%;
   }
 
