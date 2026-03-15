@@ -1608,15 +1608,6 @@ __p+='`),
             "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange",
           c;
         t.ready = function () {
-          var p = n.attr("data-wf-status"),
-            h = n.attr("data-wf-domain") || "";
-          (/\.webflow\.io$/i.test(h) && a.hostname !== h && (p = !0),
-            p &&
-              !s &&
-              ((c = c || f()),
-              g(),
-              setTimeout(g, 500),
-              e(r).off(u, v).on(u, v)));
         };
         function v() {
           var p =
