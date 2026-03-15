@@ -646,6 +646,22 @@
         }
         lastScroll = currentScroll;
       });
+
+      // Card entrance animations observer
+      const cardObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document.querySelectorAll(".work-block").forEach((card) => {
+        cardObserver.observe(card);
+      });
     </script>
   </body>
 </html>

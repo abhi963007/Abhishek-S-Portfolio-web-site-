@@ -2613,6 +2613,33 @@ a {
   transform: translateY(-100%);
 }
 
+/* Card Entrance Animations */
+.work-block-image-wrapper,
+.work-block-text-wrapper {
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media screen and (max-width: 991px) {
+  .work-block .work-block-image-wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .work-block .work-block-text-wrapper {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  .work-block.is-visible .work-block-image-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .work-block.is-visible .work-block-text-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-section {
   background-image: linear-gradient(#f8d5d3, #f8d5d300);
   padding-top: 230px;
