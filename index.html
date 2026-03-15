@@ -622,5 +622,30 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/webflow.55dbba19e.js" type="text/javascript"></script>
+    <script>
+      let lastScroll = 0;
+      const navbar = document.querySelector(".navbar");
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= 0) {
+          navbar.classList.remove("navbar--hidden");
+          return;
+        }
+        if (
+          currentScroll > lastScroll &&
+          !navbar.classList.contains("navbar--hidden")
+        ) {
+          // scroll down
+          navbar.classList.add("navbar--hidden");
+        } else if (
+          currentScroll < lastScroll &&
+          navbar.classList.contains("navbar--hidden")
+        ) {
+          // scroll up
+          navbar.classList.remove("navbar--hidden");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
   </body>
 </html>

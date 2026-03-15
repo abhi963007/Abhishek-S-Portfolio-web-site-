@@ -2606,6 +2606,11 @@ a {
   padding: 30px 40px;
   position: fixed;
   inset: 0% 0% auto;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navbar.navbar--hidden {
+  transform: translateY(-100%);
 }
 
 .hero-section {
@@ -4110,6 +4115,7 @@ a {
 
   .work-block-heading-wrapper {
     margin-bottom: 100px;
+    order: -2;
   }
 
   .anchor-div {
